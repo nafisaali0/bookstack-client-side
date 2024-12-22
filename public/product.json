@@ -1,72 +1,102 @@
 [
     {
-        "book_name": "The Great Gatsby",
-        "price": 15.99,
-        "category": "Fiction",
-        "image": "https://example.com/images/great_gatsby.jpg",
-        "description": "A tragic story of the American Dream, set in the Jazz Age of the 1920s, exploring love, wealth, and social status."
+      "product_name": "The Great Gatsby",
+      "details": "A tragic story of the American Dream, set in the Jazz Age of the 1920s, exploring love, wealth, and social status.",
+      "productimage": "https://example.com/images/great_gatsby.jpg",
+      "category": "Fiction",
+      "price": "100 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": "nafisaali610@gmail.com"
     },
     {
-        "book_name": "1984",
-        "price": 18.99,
-        "category": "Dystopian",
-        "image": "https://example.com/images/1984.jpg",
-        "description": "A chilling vision of a totalitarian future where the government controls everything, even thought itself."
+      "product_name": "1984",
+      "details": "A chilling vision of a totalitarian future where the government controls everything, even thought itself.",
+      "productimage": "https://example.com/images/1984.jpg",
+      "category": "Dystopian",
+      "price": "50 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "To Kill a Mockingbird",
-        "price": 12.99,
-        "category": "Classic",
-        "image": "https://example.com/images/to_kill_a_mockingbird.jpg",
-        "description": "A powerful novel on racial injustice and moral growth in the American South during the 1930s."
+      "product_name": "To Kill a Mockingbird",
+      "details": "A powerful novel on racial injustice and moral growth in the American South during the 1930s.",
+      "productimage": "https://example.com/images/to_kill_a_mockingbird.jpg",
+      "category": "Classic",
+      "price": "400 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "The Catcher in the Rye",
-        "price": 14.99,
-        "category": "Fiction",
-        "image": "https://example.com/images/catcher_in_the_rye.jpg",
-        "description": "A story of teenage rebellion and isolation, told through the eyes of the disenchanted Holden Caulfield."
+      "product_name": "The Catcher in the Rye",
+      "details": "A story of teenage rebellion and isolation, told through the eyes of the disenchanted Holden Caulfield.",
+      "productimage": "https://example.com/images/catcher_in_the_rye.jpg",
+      "category": "Fiction",
+      "price": "70 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "Brave New World",
-        "price": 16.99,
-        "category": "Science Fiction",
-        "image": "https://example.com/images/brave_new_world.jpg",
-        "description": "A dystopian society where technology and mass consumerism suppress individuality and freedom."
+      "product_name": "Brave New World",
+      "details": "A dystopian society where technology and mass consumerism suppress individuality and freedom.",
+      "productimage": "https://example.com/images/brave_new_world.jpg",
+      "category": "Science Fiction",
+      "price": "500 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "Moby Dick",
-        "price": 17.99,
-        "category": "Classic",
-        "image": "https://example.com/images/moby_dick.jpg",
-        "description": "The epic tale of Captain Ahab's obsession with hunting the white whale, Moby Dick, exploring themes of fate and revenge."
+      "product_name": "Moby Dick",
+      "details": "The epic tale of Captain Ahab's obsession with hunting the white whale, Moby Dick, exploring themes of fate and revenge.",
+      "productimage": "https://example.com/images/moby_dick.jpg",
+      "category": "Classic",
+      "price": "60 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "War and Peace",
-        "price": 22.99,
-        "category": "Historical Fiction",
-        "image": "https://example.com/images/war_and_peace.jpg",
-        "description": "A sweeping historical novel that intertwines personal drama with the events of the Napoleonic Wars in Russia."
+      "product_name": "War and Peace",
+      "details": "A sweeping historical novel that intertwines personal drama with the events of the Napoleonic Wars in Russia.",
+      "productimage": "https://example.com/images/war_and_peace.jpg",
+      "category": "Historical Fiction",
+      "price": "410 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "The Hobbit",
-        "price": 14.49,
-        "category": "Fantasy",
-        "image": "https://example.com/images/the_hobbit.jpg",
-        "description": "Bilbo Baggins' adventure into the world of dwarves, elves, and dragons, marking the beginning of the Lord of the Rings saga."
+      "product_name": "The Hobbit",
+      "details": "Bilbo Baggins' adventure into the world of dwarves, elves, and dragons, marking the beginning of the Lord of the Rings saga.",
+      "productimage": "https://example.com/images/the_hobbit.jpg",
+      "category": "Fantasy",
+      "price": "150 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "Pride and Prejudice",
-        "price": 10.99,
-        "category": "Romance",
-        "image": "https://example.com/images/pride_and_prejudice.jpg",
-        "description": "The love story of Elizabeth Bennet and Mr. Darcy, set against the backdrop of early 19th-century England and social expectations."
+      "product_name": "Pride and Prejudice",
+      "details": "The love story of Elizabeth Bennet and Mr. Darcy, set against the backdrop of early 19th-century England and social expectations.",
+      "productimage": "https://example.com/images/pride_and_prejudice.jpg",
+      "category": "Romance",
+      "price": "50 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     },
     {
-        "book_name": "The Lord of the Rings",
-        "price": 25.99,
-        "category": "Fantasy",
-        "image": "https://example.com/images/lord_of_the_rings.jpg",
-        "description": "The epic quest of Frodo Baggins and his companions to destroy the One Ring and defeat the Dark Lord Sauron."
+      "product_name": "The Lord of the Rings",
+      "details": "The epic quest of Frodo Baggins and his companions to destroy the One Ring and defeat the Dark Lord Sauron.",
+      "productimage": "https://example.com/images/lord_of_the_rings.jpg",
+      "category": "Fantasy",
+      "price": "670 Taka",
+      "buyer_name": null,
+      "buyer_image": null,
+      "buyer_email": null
     }
-]
+  ]

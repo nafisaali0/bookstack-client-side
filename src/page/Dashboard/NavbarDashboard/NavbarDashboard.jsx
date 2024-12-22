@@ -123,6 +123,10 @@ const NavbarDashboard = () => {
                                                             to="/dashboard/seller-dashboard">Seller  Dashboard</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active"
+                                                            className={ifActive('/dashboard/add-products') ? "navbar__link--active" : "navbar__link"}
+                                                            to="/dashboard/add-products">Add Products</Link>
+                                                        <Link
+                                                            activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/manage-product') ? "navbar__link--active" : "navbar__link"}
                                                             to="/dashboard/manage-product">Manage Products</Link>
                                                     </>

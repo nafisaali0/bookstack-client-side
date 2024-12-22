@@ -6,9 +6,10 @@ import HomeLayout from "../page/Home/Homelayout/HomeLayout";
 import PrivateRoutes from "./PrivateRoutes";
 import Dashboard from "../Layout/Dashboard";
 import AdminDashboard from "../page/Dashboard/Admin/AdminDashboard/AdminDashboard";
-import SellerDashboard from "../page/Dashboard/SellerDashboard/SellerDashboard";
-import BuyerDashboard from "../page/Dashboard/BuyerDashboard/BuyerDashboard";
+import SellerDashboard from "../page/Dashboard/Seller/SellerDashboard/SellerDashboard";
 import ManageUsers from './../page/Dashboard/Admin/ManageUsers/ManageUsers';
+import BuyerDashboard from './../page/Dashboard/Buyer/BuyerDashboard/BuyerDashboard';
+import AddProducts from "../page/Dashboard/Seller/AddProducts/AddProducts";
 
 
 export const router = createBrowserRouter([
@@ -50,12 +51,15 @@ export const router = createBrowserRouter([
                 path: "/dashboard/seller-dashboard",
                 element: <SellerDashboard></SellerDashboard>,
             },
+            {
+                path: "/dashboard/add-products",
+                element:<AddProducts></AddProducts>,
+            },
             // buyer 
             {
                 path: "/dashboard/buyer-dashboard",
-                element: <BuyerDashboard></BuyerDashboard>,
+                element: <BuyerDashboard></BuyerDashboard>
             },
-
 
 
         ]
