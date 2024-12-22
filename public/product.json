@@ -1,0 +1,72 @@
+[
+    {
+        "book_name": "The Great Gatsby",
+        "price": 15.99,
+        "category": "Fiction",
+        "image": "https://example.com/images/great_gatsby.jpg",
+        "description": "A tragic story of the American Dream, set in the Jazz Age of the 1920s, exploring love, wealth, and social status."
+    },
+    {
+        "book_name": "1984",
+        "price": 18.99,
+        "category": "Dystopian",
+        "image": "https://example.com/images/1984.jpg",
+        "description": "A chilling vision of a totalitarian future where the government controls everything, even thought itself."
+    },
+    {
+        "book_name": "To Kill a Mockingbird",
+        "price": 12.99,
+        "category": "Classic",
+        "image": "https://example.com/images/to_kill_a_mockingbird.jpg",
+        "description": "A powerful novel on racial injustice and moral growth in the American South during the 1930s."
+    },
+    {
+        "book_name": "The Catcher in the Rye",
+        "price": 14.99,
+        "category": "Fiction",
+        "image": "https://example.com/images/catcher_in_the_rye.jpg",
+        "description": "A story of teenage rebellion and isolation, told through the eyes of the disenchanted Holden Caulfield."
+    },
+    {
+        "book_name": "Brave New World",
+        "price": 16.99,
+        "category": "Science Fiction",
+        "image": "https://example.com/images/brave_new_world.jpg",
+        "description": "A dystopian society where technology and mass consumerism suppress individuality and freedom."
+    },
+    {
+        "book_name": "Moby Dick",
+        "price": 17.99,
+        "category": "Classic",
+        "image": "https://example.com/images/moby_dick.jpg",
+        "description": "The epic tale of Captain Ahab's obsession with hunting the white whale, Moby Dick, exploring themes of fate and revenge."
+    },
+    {
+        "book_name": "War and Peace",
+        "price": 22.99,
+        "category": "Historical Fiction",
+        "image": "https://example.com/images/war_and_peace.jpg",
+        "description": "A sweeping historical novel that intertwines personal drama with the events of the Napoleonic Wars in Russia."
+    },
+    {
+        "book_name": "The Hobbit",
+        "price": 14.49,
+        "category": "Fantasy",
+        "image": "https://example.com/images/the_hobbit.jpg",
+        "description": "Bilbo Baggins' adventure into the world of dwarves, elves, and dragons, marking the beginning of the Lord of the Rings saga."
+    },
+    {
+        "book_name": "Pride and Prejudice",
+        "price": 10.99,
+        "category": "Romance",
+        "image": "https://example.com/images/pride_and_prejudice.jpg",
+        "description": "The love story of Elizabeth Bennet and Mr. Darcy, set against the backdrop of early 19th-century England and social expectations."
+    },
+    {
+        "book_name": "The Lord of the Rings",
+        "price": 25.99,
+        "category": "Fantasy",
+        "image": "https://example.com/images/lord_of_the_rings.jpg",
+        "description": "The epic quest of Frodo Baggins and his companions to destroy the One Ring and defeat the Dark Lord Sauron."
+    }
+]
