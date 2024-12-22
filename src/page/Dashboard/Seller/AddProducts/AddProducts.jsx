@@ -21,6 +21,7 @@ const AddProducts = () => {
         category: "",
         details: "",
         price: "",
+        discount_price:""
     });
 
     const handleChange = (e) => {
@@ -51,6 +52,7 @@ const AddProducts = () => {
         const product_name = e.target.product_name.value;
         const details = e.target.details.value;
         const price = e.target.price.value;
+        const discount_price  = e.target.discount_price.value;
         const category = e.target.category.value;
         const date = moment().format("MMM Do YY");
         const time = moment().format('LT');
@@ -58,7 +60,7 @@ const AddProducts = () => {
         const buyer_image = currentUser.photo;
         const buyer_Email = currentUser.email;
    
-        const newProduct = { productimage: imagePreview, product_name, details, price, category, buyer_name, buyer_Email, buyer_image, date, time, }
+        const newProduct = { productimage: imagePreview, product_name, details, price, discount_price, category, buyer_name, buyer_Email, buyer_image, date, time, }
         console.log(newProduct)
      
         const productRes = await axiosLocalhost.post('/products', newProduct);
@@ -100,6 +102,9 @@ const AddProducts = () => {
                                 <div className="my-3">
                                     <textarea type="text" name="price" value={formData.price} onChange={handleChange} placeholder="Add Price:" className="resize-none overflow-y-hidden bg-transparent my-5 py-5 w-full text-lg  outline-none font-semibold placeholder:text-xl" />
                                 </div>
+                                <div className="my-3">
+                                    <textarea type="text" name="discount_price" value={formData.discount_price} onChange={handleChange} placeholder="Add Sale/Discount Price:" className="resize-none overflow-y-hidden bg-transparent my-5 py-5 w-full text-lg  outline-none font-semibold placeholder:text-xl" />
+                                </div>
                             </div>
                         </div>
                         <div className="w-full lg:w-2/4 h-screen overflow-y-scroll">
@@ -121,6 +126,9 @@ const AddProducts = () => {
                                 </div>
                                 <div className="my-3">
                                     <p className="text-xl font-semibold placeholder:text-xl">{formData.price}</p>
+                                </div>
+                                <div className="my-3">
+                                    <p className="text-xl font-semibold placeholder:text-xl">{formData.discount_price}</p>
                                 </div>
                             </div>
                         </div>
