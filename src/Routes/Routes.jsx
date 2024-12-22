@@ -10,6 +10,8 @@ import SellerDashboard from "../page/Dashboard/Seller/SellerDashboard/SellerDash
 import ManageUsers from './../page/Dashboard/Admin/ManageUsers/ManageUsers';
 import BuyerDashboard from './../page/Dashboard/Buyer/BuyerDashboard/BuyerDashboard';
 import AddProducts from "../page/Dashboard/Seller/AddProducts/AddProducts";
+import ManageProducts from "../page/Dashboard/Seller/ManageProducts/ManageProducts";
+import UpdateProducts from './../page/Dashboard/Seller/ManageProducts/UpdateProducts';
 
 
 export const router = createBrowserRouter([
@@ -54,6 +56,15 @@ export const router = createBrowserRouter([
             {
                 path: "/dashboard/add-products",
                 element:<AddProducts></AddProducts>,
+            },
+            {
+                path: '/dashboard/update/:id',
+                element: <UpdateProducts></UpdateProducts>,
+                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
+                path: "/dashboard/manage-product",
+                element:<ManageProducts></ManageProducts>,
             },
             // buyer 
             {

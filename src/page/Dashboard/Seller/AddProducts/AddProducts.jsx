@@ -56,11 +56,11 @@ const AddProducts = () => {
         const category = e.target.category.value;
         const date = moment().format("MMM Do YY");
         const time = moment().format('LT');
-        const buyer_name = currentUser.name;
-        const buyer_image = currentUser.photo;
-        const buyer_Email = currentUser.email;
+        const seller_name = currentUser.name;
+        const seller_image = currentUser.photo;
+        const seller_email = currentUser.email;
    
-        const newProduct = { productimage: imagePreview, product_name, details, price, discount_price, category, buyer_name, buyer_Email, buyer_image, date, time, }
+        const newProduct = { productimage: imagePreview, product_name, details, price, discount_price, category, seller_name, seller_email, seller_image, date, time, }
         console.log(newProduct)
      
         const productRes = await axiosLocalhost.post('/products', newProduct);
