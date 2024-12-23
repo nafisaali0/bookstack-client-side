@@ -15,13 +15,14 @@ import UpdateProducts from './../page/Dashboard/Seller/ManageProducts/UpdateProd
 import WishlistProduct from "../page/Dashboard/Buyer/WishlistProduct/WishlistProduct";
 import CartProductList from "../page/Dashboard/Buyer/Cart/CartProductList";
 import ProductsPage from "../page/ProductsPage/ProductsPage";
+import ErrorPage from "../page/ErrorPage/ErrorPage";
 
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
-        // errorElement: <ErrorPage></ErrorPage>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
