@@ -62,7 +62,7 @@ const RecommendedProduct = () => {
 
                     {/* checking */}
 
-                    {products.map((product) => (
+                    {products.slice(0,4).map((product) => (
                         <SwiperSlide key={product._id}>
                             <div className="card bg-white shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 rounded-lg overflow-hidden">
                                 <figure className="overflow-hidden">

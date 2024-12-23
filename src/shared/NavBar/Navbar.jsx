@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import useAuth from "../../hooks/useAuth";
 import useUsers from './../../hooks/useUsers';
 import SelectUserRole from "../../components/SelectUserRole";
@@ -9,12 +9,14 @@ const Navbar = () => {
 
     const { user, logOut } = useAuth();
     const [users] = useUsers()
+    const navigate = useNavigate()
     const getUser = users.length > 0 ? users[0] : null;
 
     const handleLogOut = () => {
         logOut(user)
             .then(result => {
                 console.log(result)
+                navigate('/')
             })
             .catch(error => {
                 console.log(error)
