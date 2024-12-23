@@ -16,10 +16,10 @@ const RecommendedProduct = () => {
                 <h2 className="text-2xl font-bold text-center mb-6">Recommended Books For You</h2>
                 <Swiper
                     slidesPerView={4}
-                    spaceBetween={10}
-                    pagination={{
-                        clickable: true,
-                    }}
+                    spaceBetween={20}
+                    // pagination={{
+                    //     clickable: true,
+                    // }}
                     breakpoints={{
                         // Responsive breakpoints
                         425: {
@@ -62,7 +62,7 @@ const RecommendedProduct = () => {
 
                     {/* checking */}
 
-                    {products.slice(0,4).map((product) => (
+                    {products.slice(0, 4).map((product) => (
                         <SwiperSlide key={product._id}>
                             <div className="card bg-white shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 rounded-lg overflow-hidden">
                                 <figure className="overflow-hidden">
