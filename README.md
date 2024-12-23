@@ -1,8 +1,20 @@
-# React + Vite
+## BookStack E-commerce Web Application
+This project by react  + express js + Mongo DB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features : 
+1. Home
+2. Product
+3. Dashboard
 
-Currently, two official plugins are available:
+### Role:
+1. Admin
+2. Seller
+3. Buyer
+### Explain the feature of the project : 
+Admin - can manage user
+Seller - can add products, update and delete products 
+buyer - can product wishlist, cart, and sorting
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## please refresh if something not coming out slowly
+
+# Live LinK In Project: <a href="https://book-stack-project-ecommerce.netlify.app/">JestBlog</a>
