@@ -17,4 +17,4 @@ buyer - can product wishlist, cart, and sorting
 
 ## please refresh if something not coming out slowly
 
-# Live LinK In Project: <a href="https://book-stack-project-ecommerce.netlify.app/">JestBlog</a>
+# Live LinK In Project: <a href="https://book-stack-project-ecommerce.netlify.app/">BookStack</a>
