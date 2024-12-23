@@ -14,8 +14,7 @@ const ManageUsers = () => {
     //update users
     const onSubmit = async (data) => {
         reset();
-        console.log(data)
-
+        // console.log(data)
         const userItem = {
             role: data.role,
             name: data.userName,
