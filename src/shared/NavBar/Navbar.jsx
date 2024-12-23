@@ -52,7 +52,7 @@ const Navbar = () => {
                                     </li>
                                 )}
                                 {/* <li><a>Dashboard</a></li> */}
-                                <li><a>Product</a></li>
+                                <li><a href="/products-page">Product</a></li>
                                 <li><a>About</a></li>
                             </ul>
                         </div>

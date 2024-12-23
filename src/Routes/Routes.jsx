@@ -14,6 +14,7 @@ import ManageProducts from "../page/Dashboard/Seller/ManageProducts/ManageProduc
 import UpdateProducts from './../page/Dashboard/Seller/ManageProducts/UpdateProducts';
 import WishlistProduct from "../page/Dashboard/Buyer/WishlistProduct/WishlistProduct";
 import CartProductList from "../page/Dashboard/Buyer/Cart/CartProductList";
+import ProductsPage from "../page/ProductsPage/ProductsPage";
 
 
 export const router = createBrowserRouter([
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
             {
                 path: "/signup",
                 element: <Signup></Signup>,
+            },
+            {
+                path: "/products-page",
+                element: <ProductsPage></ProductsPage>,
             },
         ],
     },
