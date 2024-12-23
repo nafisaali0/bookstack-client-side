@@ -12,7 +12,6 @@ const NavbarDashboard = () => {
     const location = useLocation()
     const ifActive = (path) => location.pathname === path;
     const getUser = users.length > 0 ? users[0] : null;
-    console.log(getUser)
 
     const handleLogOut = () => {
         logOut(user)
@@ -82,6 +81,10 @@ const NavbarDashboard = () => {
                                                             to="/dashboard/buyer-dashboard"> Buyer Dashboard</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active_mobile"
+                                                            className={ifActive('/dashboard/wishlist-product') ? "navbar__link--active" : "navbar__link_mobile"}
+                                                            to="/dashboard/wishlist-product">WishList</Link>
+                                                        <Link
+                                                            activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/cart') ? "navbar__link--active" : "navbar__link_mobile"}
                                                             to="/dashboard/cart">Cart</Link>
                                                     </>
@@ -137,6 +140,10 @@ const NavbarDashboard = () => {
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/buyer-dashboard') ? "navbar__link--active" : "navbar__link"}
                                                             to="/dashboard/buyer-dashboard"> Buyer Dashboard</Link>
+                                                        <Link
+                                                            activeClassName="navbar__link--active"
+                                                            className={ifActive('/dashboard/wishlist-product') ? "navbar__link--active" : "navbar__link"}
+                                                            to="/dashboard/wishlist-product"> WishList</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/cart') ? "navbar__link--active" : "navbar__link"}

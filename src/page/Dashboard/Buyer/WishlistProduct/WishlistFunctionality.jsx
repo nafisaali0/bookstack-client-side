@@ -10,13 +10,14 @@ const WishlistFunctionality = ({ product_id }) => {
 
     const [products] = useProducts();
     const [wishList] = useWishlist();
+    console.log(wishList)
     const { user } = useAuth()
     const axiosLocalhost = useAxioslocalhost();
 
     const handleWishList = async () => {
         const date = moment().format("MMM Do YY");
         const time = moment().format("LT");
-        const user_email = user.email;
+        const email = user.email;
 
         // Find the product by product_id
         const product = products.find((product) => product._id === product_id);
@@ -26,12 +27,12 @@ const WishlistFunctionality = ({ product_id }) => {
             return;
         }
 
-        const { _id, image: productimage, details, price, discount_price, category, seller_name, seller_image } = product;
+        const { _id, productimage, details, price, discount_price, category, seller_name, seller_image } = product;
 
         const productWishListInfo = {
             productId: _id,
             productimage,
-            user_email,
+            email,
             details,
             price,
             discount_price,

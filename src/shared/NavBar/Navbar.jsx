@@ -11,8 +11,6 @@ const Navbar = () => {
     const { user, logOut } = useAuth();
     const [users] = useUsers()
     const getUser = users.length > 0 ? users[0] : null;
-    console.log(getUser)
-
 
     const handleLogOut = () => {
         logOut(user)
