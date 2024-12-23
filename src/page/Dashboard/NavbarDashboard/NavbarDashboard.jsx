@@ -81,12 +81,12 @@ const NavbarDashboard = () => {
                                                             to="/dashboard/buyer-dashboard"> Buyer Dashboard</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active_mobile"
-                                                            className={ifActive('/dashboard/wishlist-product') ? "navbar__link--active" : "navbar__link_mobile"}
-                                                            to="/dashboard/wishlist-product">WishList</Link>
+                                                            className={ifActive('/dashboard/wishlist-products') ? "navbar__link--active" : "navbar__link_mobile"}
+                                                            to="/dashboard/wishlist-products">WishList</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active_mobile"
-                                                            className={ifActive('/dashboard/cart') ? "navbar__link--active" : "navbar__link_mobile"}
-                                                            to="/dashboard/cart">Cart</Link>
+                                                            className={ifActive('/dashboard/cart-products') ? "navbar__link--active" : "navbar__link_mobile"}
+                                                            to="/dashboard/cart-products">Cart</Link>
                                                     </>
                                                 )}
                                             </React.Fragment>
@@ -142,23 +142,14 @@ const NavbarDashboard = () => {
                                                             to="/dashboard/buyer-dashboard"> Buyer Dashboard</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active"
-                                                            className={ifActive('/dashboard/wishlist-product') ? "navbar__link--active" : "navbar__link"}
-                                                            to="/dashboard/wishlist-product"> WishList</Link>
+                                                            className={ifActive('/dashboard/wishlist-products') ? "navbar__link--active" : "navbar__link"}
+                                                            to="/dashboard/wishlist-products"> WishList</Link>
                                                         <Link
                                                             activeClassName="navbar__link--active"
-                                                            className={ifActive('/dashboard/cart') ? "navbar__link--active" : "navbar__link"}
-                                                            to="/dashboard/cart">Cart</Link>
+                                                            className={ifActive('/dashboard/cart-products') ? "navbar__link--active" : "navbar__link"}
+                                                            to="/dashboard/cart-products">Cart</Link>
                                                     </>
                                                 )}
-                                                {/* {eachUser?.role === undefined && (
-                                                    <>
-                                                        <li>
-                                                            <NavLink to={"/home"}>
-                                                                Home
-                                                            </NavLink>
-                                                        </li>
-                                                    </>
-                                                )} */}
                                             </React.Fragment>
                                         ))
                                     }

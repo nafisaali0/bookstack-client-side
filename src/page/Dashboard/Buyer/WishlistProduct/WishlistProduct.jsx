@@ -1,7 +1,8 @@
 import useWishlist from "../../../../hooks/useWishlist"
+import WishlistProductDelete from "./WishlistProductDelete";
 
 const WishlistProduct = () => {
-    
+
     const [wishList] = useWishlist();
 
     return (
@@ -41,8 +42,9 @@ const WishlistProduct = () => {
                                                                 <span>time</span>
                                                             </div>
                                                         </div>
-                                                        {/* <div className="flex justify-between items-center my-3">
-                                                            <div className="flex gap-5 items-center">
+
+                                                        <div className="flex justify-between items-center my-3">
+                                                            {/* <div className="flex gap-5 items-center">
                                                                 <div className="flex gap-2 items-center">
                                                                     <img title="love" className="w-7 cursor-pointer" src={iconLike} alt="" /><span>{comment.length}</span>
                                                                 </div>
@@ -55,8 +57,12 @@ const WishlistProduct = () => {
                                                                     <img title="See Details" className='w-[30px] h-[30px] cursor-pointer' src={iconDetails} alt="detailsbutton" />
                                                                 </Link>
                                                                 <img title="Wishlist" onClick={() => handleDelete(_id)} className='w-[30px] h-[30px] cursor-pointer' src={iconDelete} alt="detailsbutton" />
+                                                            </div> */}
+                                                            <WishlistProductDelete wishProductId={wishProduct._id}></WishlistProductDelete>
+                                                            <div>
+                                                                <button>view details</button>
                                                             </div>
-                                                        </div> */}
+                                                        </div>
                                                     </div>
                                                     <img className="object-cover w-full rounded-t-lg h-96 md:h-80 md:min-w-11 md:rounded-none md:rounded-s-lg" src={wishProduct.productimage} alt="" />
                                                 </div>

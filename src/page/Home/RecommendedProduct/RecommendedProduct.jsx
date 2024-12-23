@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import useProducts from '../../../hooks/useProducts';
 import WishlistFunctionality from '../../Dashboard/Buyer/WishlistProduct/WishlistFunctionality';
+import CartFuntionality from '../../Dashboard/Buyer/Cart/CartFuntionality';
 
 const RecommendedProduct = () => {
     const [products] = useProducts();
@@ -52,7 +53,7 @@ const RecommendedProduct = () => {
                                     <p>{product.price} TK</p>
                                     <div className="card-actions justify-end">
                                         <WishlistFunctionality product_id={product._id}></WishlistFunctionality>
-                                        <div className="badge badge-outline">cart</div>
+                                        <CartFuntionality product_id={product._id}></CartFuntionality>
                                     </div>
                                 </div>
                             </div>

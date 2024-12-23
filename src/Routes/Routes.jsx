@@ -13,6 +13,7 @@ import AddProducts from "../page/Dashboard/Seller/AddProducts/AddProducts";
 import ManageProducts from "../page/Dashboard/Seller/ManageProducts/ManageProducts";
 import UpdateProducts from './../page/Dashboard/Seller/ManageProducts/UpdateProducts';
 import WishlistProduct from "../page/Dashboard/Buyer/WishlistProduct/WishlistProduct";
+import CartProductList from "../page/Dashboard/Buyer/Cart/CartProductList";
 
 
 export const router = createBrowserRouter([
@@ -73,8 +74,12 @@ export const router = createBrowserRouter([
                 element: <BuyerDashboard></BuyerDashboard>
             },
             {
-                path: '/dashboard/wishlist-product',
+                path: '/dashboard/wishlist-products',
                 element: <WishlistProduct></WishlistProduct>,
+            },
+            {
+                path: '/dashboard/cart-products',
+                element: <CartProductList></CartProductList>
             },
         ]
     }
