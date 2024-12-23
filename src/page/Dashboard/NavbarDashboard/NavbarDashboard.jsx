@@ -51,10 +51,10 @@ const NavbarDashboard = () => {
                                             <React.Fragment key={eachUser.id}>
                                                 {eachUser?.role === "admin" && (
                                                     <>
-                                                        <Link
+                                                        {/* <Link
                                                             activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/admin-dashboard') ? "navbar__link--active_mobile" : "navbar__link_mobile"}
-                                                            to="/dashboard/admin-dashboard">Admin Dashboard</Link>
+                                                            to="/dashboard/admin-dashboard">Dashboard</Link> */}
                                                         <Link
                                                             activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/manage-user') ? "navbar__link--active_mobile" : "navbar__link_mobile"}
@@ -63,10 +63,10 @@ const NavbarDashboard = () => {
                                                 )}
                                                 {eachUser?.role === "seller" && (
                                                     <>
-                                                        <Link
+                                                        {/* <Link
                                                             activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/seller-dashboard') ? "navbar__link--active" : "navbar__link_mobile"}
-                                                            to="/dashboard/seller-dashboard">Seller  Dashboard</Link>
+                                                            to="/dashboard/seller-dashboard">Dashboard</Link> */}
                                                         <Link
                                                             activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/manage-product') ? "navbar__link--active" : "navbar__link_mobile"}
@@ -75,10 +75,10 @@ const NavbarDashboard = () => {
                                                 )}
                                                 {eachUser?.role === "buyer" && (
                                                     <>
-                                                        <Link
+                                                        {/* <Link
                                                             activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/buyer-dashboard') ? "navbar__link--active" : "navbar__link_mobile"}
-                                                            to="/dashboard/buyer-dashboard"> Buyer Dashboard</Link>
+                                                            to="/dashboard/buyer-dashboard">Dashboard</Link> */}
                                                         <Link
                                                             activeClassName="navbar__link--active_mobile"
                                                             className={ifActive('/dashboard/wishlist-products') ? "navbar__link--active" : "navbar__link_mobile"}
@@ -108,10 +108,10 @@ const NavbarDashboard = () => {
                                             <React.Fragment key={eachUser.id}>
                                                 {eachUser?.role === "admin" && (
                                                     <>
-                                                        <Link
+                                                        {/* <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/admin-dashboard') ? "navbar__link--active" : "navbar__link"}
-                                                            to="/dashboard/admin-dashboard">Admin Dashboard</Link>
+                                                            to="/dashboard/admin-dashboard">Dashboard</Link> */}
                                                         <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/manage-user') ? "navbar__link--active" : "navbar__link"}
@@ -120,10 +120,10 @@ const NavbarDashboard = () => {
                                                 )}
                                                 {eachUser?.role === "seller" && (
                                                     <>
-                                                        <Link
+                                                        {/* <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/seller-dashboard') ? "navbar__link--active" : "navbar__link"}
-                                                            to="/dashboard/seller-dashboard">Seller  Dashboard</Link>
+                                                            to="/dashboard/seller-dashboard">Dashboard</Link> */}
                                                         <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/add-products') ? "navbar__link--active" : "navbar__link"}
@@ -136,10 +136,10 @@ const NavbarDashboard = () => {
                                                 )}
                                                 {eachUser?.role === "buyer" && (
                                                     <>
-                                                        <Link
+                                                        {/* <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/buyer-dashboard') ? "navbar__link--active" : "navbar__link"}
-                                                            to="/dashboard/buyer-dashboard"> Buyer Dashboard</Link>
+                                                            to="/dashboard/buyer-dashboard">Dashboard</Link> */}
                                                         <Link
                                                             activeClassName="navbar__link--active"
                                                             className={ifActive('/dashboard/wishlist-products') ? "navbar__link--active" : "navbar__link"}
