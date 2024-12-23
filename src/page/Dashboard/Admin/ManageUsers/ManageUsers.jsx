@@ -7,26 +7,34 @@ import useAxioslocalhost from "../../../../hooks/useAxioslocalhost";
 
 const ManageUsers = () => {
 
-    const [userList] = useAllUsers();//this user from DB
+
     const { register, handleSubmit, reset } = useForm();
     const axiosLocalhost = useAxioslocalhost()
+    const [userList] = useAllUsers();//this user from DB
 
     //update users
     const onSubmit = async (data) => {
+        console.log(data)
         reset();
-        // console.log(data)
-        const userItem = {
-            role: data.role,
-            name: data.userName,
-            photo: data.image,
-            email: data.email,
+        const selectedUser = userList.find((user) => user._id === data.userId);
+
+        if (!selectedUser) {
+            console.error("User not found");
+            return;
         }
-        console.log(userItem)
+        // Create the user object with updated properties
+        const userItem = {
+            ...selectedUser, // Include all existing properties of the user
+            role: data.role, // Update the role
+            name: data.name || selectedUser.name, // Update name if provided, else keep the original
+            photo: data.image || selectedUser.photo, // Update photo if provided, else keep the original
+            email: data.email || selectedUser.email, // Update email if provided, else keep the original
+        };
+        // console.log("Updated User Item:", userItem);    
         console.log("load")
         const userRes = await axiosLocalhost.patch(`/users/${data.userId}`, userItem);
         console.log(userRes.data)
-        if (userRes.data.modifiedCount > 0) {
-            // show success popup
+        if (userRes.data.modifiedCount > 0) { // show success popup
             reset();
             Swal.fire({
                 position: "top-end",
@@ -105,6 +113,9 @@ const ManageUsers = () => {
                                                                         <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                                                                     </form>
                                                                     <form
+                                                                        // onSubmit={handleSubmit((data) => {
+                                                                        //     onSubmit({ ...data, userId: user?._id }); // Passing userId along with form data
+                                                                        // })}
                                                                         onSubmit={handleSubmit((data) => {
                                                                             onSubmit({ ...data, userId: user?._id, userName: user?.name, email: user?.email, image: user?.photo }); // Passing userId along with form data
                                                                         })}
