@@ -36,7 +36,7 @@ const RecommendedProduct = () => {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
-                    {products.map((product) => (
+                    {/* {products.map((product) => (
                         <SwiperSlide key={product._id}>
                             <div className="card bg-base-100 shadow-xl">
                                 <figure>
@@ -48,7 +48,7 @@ const RecommendedProduct = () => {
                                 <div className="card-body">
                                     <h2 className="card-title">
                                         {product.product_name}
-                                        {/* <div className="badge badge-secondary">NEW</div> */}
+                                        <div className="badge badge-secondary">NEW</div>
                                     </h2>
                                     <p>{product.price} TK</p>
                                     <div className="card-actions justify-end">
@@ -58,7 +58,34 @@ const RecommendedProduct = () => {
                                 </div>
                             </div>
                         </SwiperSlide>
+                    ))} */}
+
+                    {/* checking */}
+
+                    {products.map((product) => (
+                        <SwiperSlide key={product._id}>
+                            <div className="card bg-white shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 rounded-lg overflow-hidden">
+                                <figure className="overflow-hidden">
+                                    <img
+                                        className="h-[300px] w-full object-cover hover:scale-110 transition-transform duration-300"
+                                        src={product.productimage}
+                                        alt={product.product_name}
+                                    />
+                                </figure>
+                                <div className="card-body p-4">
+                                    <h2 className="card-title text-lg font-semibold text-black mb-2 text-left">
+                                        {product.product_name}
+                                    </h2>
+                                    <p className="text-yellow-400 font-bold mb-4">{product.price} TK</p>
+                                    <div className="card-actions justify-end flex gap-2">
+                                        <WishlistFunctionality product_id={product._id}></WishlistFunctionality>
+                                        <CartFuntionality product_id={product._id}></CartFuntionality>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                     ))}
+
                 </Swiper>
             </div>
         </>
@@ -66,3 +93,4 @@ const RecommendedProduct = () => {
 };
 
 export default RecommendedProduct;
+
