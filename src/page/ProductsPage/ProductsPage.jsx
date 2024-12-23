@@ -147,7 +147,7 @@ const ProductsPage = () => {
                                 className="w-full h-48 object-cover rounded-md mb-4 group-hover:opacity-90 transition-opacity duration-300"
                             />
                             <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.product_name}</h3>
-                            <p className="text-[#FF6347] font-semibold mb-1">Price: ${product.price}</p>
+                            <p className="text-[#FF6347] font-semibold mb-1">Price: TK{product.price}</p>
                             <p className="text-gray-600 mb-4">Category: {product.category}</p>
 
                             {/* Wishlist and Cart Functionality */}

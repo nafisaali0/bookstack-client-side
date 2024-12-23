@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
     },
     // Dashboard Route - admin,seller,buyer
     {
-        path: 'dashboard',
+        path: '/dashboard',
         element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>,
         children: [
             // admin routes
@@ -67,7 +67,7 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/update/:id',
                 element: <UpdateProducts></UpdateProducts>,
-                loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({ params }) => fetch(`https://bookstack-shop-server.vercel.app/products/${params.id}`)
             },
             {
                 path: "/dashboard/manage-product",

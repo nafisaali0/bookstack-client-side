@@ -283,7 +283,7 @@ const Navbar = () => {
                                     className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-56 h-fit p-2 shadow-lg border border-yellow-400"
                                 >
                                     <li>
-                                        <a className="hover:text-yellow-400">{user?.displayName || "User Name"}</a>
+                                        <a className="hover:text-yellow-400">{getUser?.name || "User Name"}</a>
                                     </li>
                                     <li>
                                         <a

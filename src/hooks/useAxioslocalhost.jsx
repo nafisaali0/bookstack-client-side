@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosLocalhost = axios.create({
-    baseURL: 'http://localhost:5000'
+    baseURL: 'https://bookstack-shop-server.vercel.app'
 })
 
 const useAxioslocalhost = () => {

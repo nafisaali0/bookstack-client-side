@@ -157,7 +157,6 @@ const ManageUsers = () => {
                     </div>
                 </div>
             </div>
-
         </>
     )
 }
