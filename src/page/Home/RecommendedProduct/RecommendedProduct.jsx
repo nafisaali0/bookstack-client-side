@@ -1,13 +1,10 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// import required modules
 import { Pagination } from 'swiper/modules';
 import useProducts from '../../../hooks/useProducts';
+import WishlistFunctionality from '../../Dashboard/Buyer/WishlistProduct/WishlistFunctionality';
 
 const RecommendedProduct = () => {
     const [products] = useProducts();
@@ -54,7 +51,7 @@ const RecommendedProduct = () => {
                                     </h2>
                                     <p>{product.price} TK</p>
                                     <div className="card-actions justify-end">
-                                        <div className="badge badge-outline">love</div>
+                                        <WishlistFunctionality product_id={product._id}></WishlistFunctionality>
                                         <div className="badge badge-outline">cart</div>
                                     </div>
                                 </div>

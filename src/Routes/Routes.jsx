@@ -12,6 +12,7 @@ import BuyerDashboard from './../page/Dashboard/Buyer/BuyerDashboard/BuyerDashbo
 import AddProducts from "../page/Dashboard/Seller/AddProducts/AddProducts";
 import ManageProducts from "../page/Dashboard/Seller/ManageProducts/ManageProducts";
 import UpdateProducts from './../page/Dashboard/Seller/ManageProducts/UpdateProducts';
+import WishlistProduct from "../page/Dashboard/Buyer/WishlistProduct/WishlistProduct";
 
 
 export const router = createBrowserRouter([
@@ -55,7 +56,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/dashboard/add-products",
-                element:<AddProducts></AddProducts>,
+                element: <AddProducts></AddProducts>,
             },
             {
                 path: '/dashboard/update/:id',
@@ -64,15 +65,17 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/dashboard/manage-product",
-                element:<ManageProducts></ManageProducts>,
+                element: <ManageProducts></ManageProducts>,
             },
             // buyer 
             {
                 path: "/dashboard/buyer-dashboard",
                 element: <BuyerDashboard></BuyerDashboard>
             },
-
-
+            {
+                path: '/dashboard/wishlist-product',
+                element: <WishlistProduct></WishlistProduct>,
+            },
         ]
     }
 ]);
